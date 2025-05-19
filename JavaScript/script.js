@@ -1,11 +1,13 @@
+//* Display of numbers and signs
+
 const display = document.querySelector('#display');
 
 document.querySelectorAll('button').forEach(button => {
-    button.addEventListener('click', () => {
+    button.addEventListener('click',  () => {
         display.textContent += button.textContent;
     });
 });
 
-//* le btn Egal 
+//* The Equal button
 
 const Egal = document.querySelector('#Egal')
