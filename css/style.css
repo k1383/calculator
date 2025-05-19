@@ -19,12 +19,9 @@ div {
 }
 
 .display {
-    border: 2px solid whitesmoke;
+    border: 2px solid rgb(139, 127, 127);
     border-radius: 15px;
     padding: 15px;
     width: 340px;
 }
 
-#calculator {
-    margin: 50px 500px;
-}
