@@ -1,31 +1,36 @@
 input {
-    padding: 8px;
-    width: 250px;
-}
-button {
-    padding: 10px 25px;
-    border-radius: 35px;
-    background-color: #b6c0ca;
-    color: white;
+    margin: 10px 10px;
+    padding: 12px 14px;
     border: none;
+    border-bottom:1px solid;
+}
+#Add {
+    font-weight: 700;
+    font-size: 20px;
+    &:hover {
+        color: cornflowerblue;
+    }
 }
 ul {
     list-style: none;
     padding: 0;
 }
 li {
-    border: 1px solid black;
-    border-radius: 35px;
+    border-bottom: 1px solid black;
     width: 500px;
     padding: 15px;
     font-weight: 700;
     font-size: 20px;
-    margin: 10px 0;
+    margin: 10px 15px;
 }
 #Delete {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
+    position: relative;
+    left: 480px;
+    bottom: 50px;
     &:hover {
         color: red;
+        scale: 1.1;
     }
 }
