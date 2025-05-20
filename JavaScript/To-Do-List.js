@@ -1,6 +1,7 @@
 const Form = document.querySelector('#Form');
 const Task = document.querySelector('#Task');
 const list = document.querySelector('#Task-List');
+const Delete = document.querySelector('#Delete');
 
 Form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -16,20 +17,12 @@ Form.addEventListener('submit', (e) => {
     list.insertAdjacentHTML('beforeend' ,`<i id="Delete" class="fa-solid fa-trash"></i>`)
 
     //* Function to delete list items
-    function Delete(li) { 
-        
-        
+    list.addEventListener('click', (e) => {
+        e.preventDefault()
+        list.remove()
+    })
 
-        Delete.addEventListener('click', (e) => {
-            e.preventDefault()
-            li.remove()
-        })
-    }
 });
 
 
 
-// list.addEventListener('click', (e) => {
-//     e.preventDefault()
-//     list.remove()
-// })
