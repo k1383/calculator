@@ -1,14 +1,7 @@
-
-
-form {
-    margin-bottom: 20px;
-}
-
-input[type="text"] {
+input {
     padding: 8px;
     width: 250px;
 }
-
 button {
     padding: 10px 25px;
     border-radius: 35px;
@@ -16,14 +9,23 @@ button {
     color: white;
     border: none;
 }
-
 ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
-
 li {
-    padding: 15px 35px;
     border: 1px solid black;
-    
+    border-radius: 35px;
+    width: 500px;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 0;
+}
+#Delete {
+    font-weight: 700;
+    font-size: 30px;
+    &:hover {
+        color: red;
+    }
 }

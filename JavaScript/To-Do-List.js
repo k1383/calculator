@@ -5,9 +5,18 @@ const list = document.querySelector('#Task-List');
 Form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    console.log(Task.value); //* affiche dans la console
+    // console.log(Task.value); //* affiche dans la console
 
     const li = document.createElement('li');
     li.textContent = Task.value;
     list.append(li); 
+    
 });
+
+const Delete = document.querySelector('#Delete')
+
+Delete.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    list.remove()
+})
