@@ -23,4 +23,42 @@ h1{
     justify-content: center;
 }
 
+/* Section Player */
 
+#Player {
+    margin: 30px 0;
+}
+#Player p {
+    margin: 20px 0;
+}
+#Player i {
+    font-size: 20px;
+}
+
+#Player1 {
+    font-weight: 700;
+    font-size: 18px;
+}
+#Player1 i {
+    color: red;
+}
+#Player2 {
+    font-weight: 700;
+    font-size: 18px;
+}
+#Player2 i {
+    color: blue;
+}
+
+/* Style of my Font Awesome icons created in JavaScript */
+
+.symbolX  {
+    color: red;
+    font-size: 50px;
+    margin: auto;
+}
+.symbolO {
+    color: blue;
+    font-size: 50px;
+    margin: auto;
+}
