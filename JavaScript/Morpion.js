@@ -19,6 +19,7 @@ const player2 = `<i class="fa-regular fa-circle symbolO"></i>`  //* symoblO → 
 
 //* Player 1
 let player1HasPlayed = false
+let player2HasPlayed = false
 
 case1.addEventListener('click', (e) => {
     e.preventDefault()
@@ -28,8 +29,24 @@ case1.addEventListener('click', (e) => {
         player1HasPlayed = true
         return;
     }
-    const p = document.createElement('p');
-    p.textContent = "Player 1 has played, it's Player 2's turn";
-    message.append(p); 
+    const h1 = document.createElement('h1');
+    h1.textContent = "Player 1 has played, it's Player 2's turn";
+    message.append(h1); 
+    h1.style.color = 'red'; 
 })
 
+case2.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    if (!player2HasPlayed) {
+        case2.innerHTML = player2
+        player2HasPlayed = true
+        return;
+    }
+    const h1 = document.createElement('h1');
+    h1.textContent = "Player 2 has played, it's Player 1's turn";
+    message.append(h1); 
+    h1.style.color = 'blue'; 
+})
+
+ 
